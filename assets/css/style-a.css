@@ -3,18 +3,19 @@ body
 
 	margin: 0px;
 	font-family: 'Josefin Slab', serif;
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: normal;
 	line-height: 18px;
 	color: #404040;
 	background: #4E4C4C;
+	padding: 20px;
 
 
 }
 
 p{
 
-	color:		 	#736E6E;
+	color:		 	#FFF;
 	font-size: 		140%;
 	line-height:	40px;
 	font-weight: 600;
@@ -29,6 +30,32 @@ p{
 	height: 700px;
 }
 
+.navbar
+{
+	margin-bottom: 0;
+	border-radius: 0;
+	height: 30px;
+}
+
+.my-profile
+{
+	transition: 0.2s all ease-in-out;
+}
+
+.my-profile:hover
+{
+
+	width: 90px;
+	border: 5px solid #324C59;
+}
+
+.menu
+{
+	position: relative;
+	float: right;
+	left: -300px;
+}
+
 .header-light
 {
 	color: ;
@@ -39,6 +66,13 @@ p{
 {
 	color: #FFF;
 	font-size: 44px;
+}
+
+.my-title
+{
+
+	color: #FFF;
+
 }
 
 .header-dark
@@ -77,12 +111,13 @@ p{
 	top: 2%;
 	text-align: center;
 	margin-bottom: 60px;
+	z-index: 40;
 
 }
 
 .intro-box-b > p
 {
-	color: #203648;
+	color: #FEFBF2;
 }
 
 
@@ -101,7 +136,8 @@ h1
 
 .intro-wrapper, .ok, .ok-a, .ok-aj, .ok-c, .ok-d
 {
-	background: none repeat scroll 0% 0% #FFF;
+	background: repeat scroll 0% 0% #F17C72;
+	background-attachment: fixed;
 	position: relative;
 	min-height: 700px;
 	width: 100%;
@@ -111,9 +147,11 @@ h1
 	
 }
 
+
+
 .intro-wrapper
 {
-	padding-top: 20px;
+	padding-top: 40px;
 }
 
 .ok
@@ -138,7 +176,7 @@ h1
 .ok-d
 {
 	padding-top: 40px; 
-	background: url('../img/graphic-design.jpg') no-repeat;
+	background: #F17C72;
 	background-attachment: fixed;
 }
 
@@ -157,7 +195,24 @@ h1
 	color: #fff;
 }
 
+.box-contact
+{
+	position: relative;
+	width: 400px;
+	height: 100px;
+}
 
+.box-contact > li
+{
+	display: inline;
+	background: none repeat scroll 0% 0% #FFF;
+	width: 200px;
+	height: 200px;
+	position: relative;
+	top: 20px;
+	border-radius: 5px;
+	box-shadow: 0px 1px 0px 0px grey;
+}
 
 .centered
 {
@@ -213,18 +268,20 @@ h1
 	top: 200px;
 	width: 40px;
 	height: 300px;
+	z-index: 55;
 }
 
 .menu-holder > ul > li 
 {
 	list-style: none;
-	background: #59BBC0;
+	background: #FFCF8D;
 	height: 10px;
 	width: 10px;
 	border-radius: 50px;
 	margin-top: 40px;
 	margin-bottom: 48px; 
 	transition: 0.3s ease-in-out;
+
 } 
 
 .menu-holder > ul > li:hover
@@ -289,7 +346,7 @@ h1
 
 .social-links-a
 {
-	color: #3CB09B;
+	color: #E3564C;
 }
 
 
@@ -303,6 +360,8 @@ h1
 	text-align: center;
 	font-weight: bold;
 	font-size: 14px;
+	border-image: url('../img/border-strip.png') 20 0 repeat;
+	border-top: 5px solid;
 }
 
 hr
