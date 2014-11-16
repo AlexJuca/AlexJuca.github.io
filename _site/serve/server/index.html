@@ -1,4 +1,69 @@
-{% include header.html %}
+<!DOCTYPE html>
+<html>
+<!-- Hack to Learn, Don't Learn to hack. -->
+<!-- Created with all the love in the wereld || Mundo || World by Alexandre Juca -->
+<head> 
+	<title> Alexandre Juca - Junior Software Developer </title>
+
+	
+	<meta charset='utf-8'></meta> 
+	 <meta content="Alexandre Juca" property="og:title">
+    <meta content="RAlexandre Juca" name="twitter:title">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="Software developer, Web Developer Alexandre Juca" property="og:site_name">
+    <meta content="Alexandre Juca is a software developer" name="description">
+    <meta content="Alexandre Juca is a software developer" property="og:description">
+    <meta content="Alexandre Juca is a software developer" name="twitter:description">
+    <meta name="Author" content="Alexandre Juca" />
+
+    <!-- Stylesheets -->
+	<link rel='stylesheet' href='assets/css/nintendo-min.css' type='text/css'>
+	<link rel='stylesheet' href='assets/css/animate-min.css' type='text/css'>
+	<!-- End of Stylesheets -->
+
+	<!-- Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Josefin+Slab:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300,700' rel='stylesheet' type='text/css'>
+	<!-- End of Fonts -->
+
+	<!-- FontAwesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- FontAwesome -->
+        <link rel='stylesheet' href='assets/css/style-a-min.css' type='text/css'> 
+         <!-- JQuery --> 
+         <script src='assets/js/jquery-2.1.1.min.js'></script>
+
+<body>
+	<nav class='navbar navbar-default'>
+
+		<!-- SOCIAL LINKS -->
+		<div class='social-box'>
+			<ul class='social-links-holder'> 
+				<li><a class='social-links-b' href='http://github.com/AlexJuca'><i class="fa fa-github social-icon"></i></a></li>
+				<li><a class='social-links-b' href='http://twitter.com/Ajxdev'><i class="fa fa-twitter social-icon"></i></a></li>
+				<li><a class='social-links-b' href='http://facebook.com/Alexandre.Juca'><i class="fa fa-facebook social-icon"></i></a></li>
+				<li><a class='social-links-b' href='https://plus.google.com/u/0/101379969000403855022/posts'><i class="fa fa-google-plus social-icon"></i></a></li>
+			</ul>
+		</div>
+		<!-- END OF SOCIAL LINKS -->
+	</nav>
+	<!-- INTRO SECTION -->
+	<div id='hi' class='intro-wrapper'>	
+		<div class='intro-box'>
+			<h1 class='header-white'> Hi! </h1>
+			<div class='lightline'></div>
+			<div class='intro-to-me'>
+				<img class='animated bounceInDown my-profile img-circle' src='assets/img/AJ.jpg'></img>
+				<h3 class='my-title animated bounceInLeft'> Alexandre Juca </h3>
+				<h3 class='my-title'>Multiplatform Software Developer</h3>
+			</div>
+			
+			<p> I a am multi skilled software developer with knowledge and experience in UX Design, Web Development, Web design, Software architecture and Android Applications. I'm passionate about writing code and teaching people how to code when not busy on projects. I love sharing my knowledge with other people and hearing feedback, I am always looking for challenges and believe that I grow as a person by overcoming them. </p>
+		</div>
+
+	</div>
+
+	<!-- END INTRO SECTION -->
 
 	<!-- KNOW|HOW SECTION -->
 	<div id='i-know' class='ok'>
@@ -50,8 +115,7 @@
 				<hr>
 				<h2> Kudos </h2>
 				<p><a href='#'>Kudos</a> is a platform for programmers to share information on their projects. Currently in Development. </p>
-				<hr>
-		
+
 			</article>
 
 		</div>
@@ -67,21 +131,7 @@
 			<h1 class='header-red'> BLOG </h1>
 			<div class='lightline'></div>
 			<p>Read articles on programming, software architecture, computer security, design and more  </p>
-			
-			<div class="spinner">
-				  <div class="cube1"></div>
-				  <div class="cube2"></div>
-				  <div class="cube3"></div>
-			</div>
-			<h2> Lazy Androiders </h2>
-				<p><a href='https://github.com/AlexJuca/Lazy_Androiders/archive/master.zip'>Lazy Androiders.py</a> is an open source tool I created that
-				installs the appropriate Android tools for Unix/Linux Systems. </p>
-				<hr>
-
-				{% for post in site.posts %}
-		<li><a href="{{ post.url }}">{{ post.title }}</a> 
-		({{ post.date | date_to_string}})</li>
-	    {% endfor %}
+			<h2> COMING SOON... </h2>
 
 		</div>
 

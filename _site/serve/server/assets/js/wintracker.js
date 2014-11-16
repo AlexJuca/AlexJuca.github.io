@@ -8,7 +8,7 @@ $(document).ready(function(){
 	
 	$(window).scroll(function(event){
 		var yPos = window.scrollY; // The current Y Position in window
-		//alert(yPos);
+		// alert(yPos);
 		if (yPos > 830 & yPos < 1200)
 		{
 			
@@ -17,20 +17,20 @@ $(document).ready(function(){
 
 
 		}
-		if (yPos > 1700 & yPos < 2400)
+		if (yPos > 1700 & yPos < 2300)
 		{
 			
 			$('.menu-holder > ul > li').css('background','#F17C72');
 
 		}
 
-		if (yPos > 2400 & yPos < 3130)
+		if (yPos > 2400 & yPos < 3100)
 		{
 			
 			$('.menu-holder > ul > li').css('background','#4E4C4C');
 
 		}
-		if (yPos > 3130 & yPos < 3800)
+		if (yPos > 3101 & yPos < 3800)
 		{
 			
 			animateSocialIcons();
