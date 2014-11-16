@@ -576,22 +576,6 @@ hr
 	margin-right: auto;
 }
 
-.primary
-{
-	float: left;
-	margin: 0px -25% 0px 0px;
-	width: 100%;
-}
-
-
-
-.secondary {
-    float: right;
-    overflow: hidden;
-    position: relative;
-    width: 20%;
-    z-index: 1;
-}
 
 .blog-img-header
 {
