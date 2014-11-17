@@ -25,6 +25,10 @@ body
 
 }
 
+li{
+	line-height:	40px;
+}
+
 p{
 
 	color:		 	#FFF;
@@ -591,6 +595,40 @@ hr
 .newsTitle
 {
 	color: #33383D;
+}
+
+.bullets 
+{
+	font-size: 19px;
+	text-align: justify;
+}
+
+.bullets > li
+{
+	font-size: 19px;
+	text-align: justify;
+}
+
+.seperator
+{
+	margin-bottom: 40px;
+}
+
+.rounded-button
+{
+	background: none repeat scroll 0% 0% #FE5E67;
+	padding: 10px;
+	border-radius: 3px;
+	color: #fff;
+	font-size: 116%;
+	font-weight: 600;
+	margin-right: 20px;
+	width: 120px;
+	text-align: center;
+	border: 1px solid #FE5E67;
+	transition: all 0.3s ease-in-out;
+	position: relative;
+	height: 40px;
 }
 
 @media screen and (max-width: 360px) {
