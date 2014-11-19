@@ -26,4 +26,9 @@ $(document).ready(function()
 	{
 		$(window).scrollTo('#contact', 800);
 	})
+
+	$('#drop-to-post').click(function()
+	{
+		$(window).scrollTo('#post-section', 800);
+	})
 })
