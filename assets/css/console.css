@@ -1,0 +1,179 @@
+/*!
+ * Author: Alexandre Antonio Juca <corextechnologies@gmail.com>
+ *Created with love
+ *Copyright 2014 - 2015 Alexandre Juca
+ *"There are only three things I believe in. 0 ,1 and the ONE that made it all possible."
+ *
+ */
+
+
+
+.main-pc
+{
+
+	    position: relative;
+    left: 0px;
+    top: 0px;
+    z-index: 90;
+}
+
+.passion
+{
+
+	position: relative;
+left: -40px;
+font-size: 20px;
+width: 600px;
+top: -510px;
+
+}
+
+
+.map
+{
+	
+	position: relative;
+	height: 100%;	
+	width: 100%;
+
+}
+
+#mac
+{
+
+ opacity: 1;
+
+}
+
+.mac-screen
+{
+
+	position: relative;
+	top: 10px;
+	padding: 10px;
+	width: 92%;
+	height: 86%;
+	border-radius: 2px 2px 2px 2px;
+	left: 3.9%;
+	z-index: 80;
+	cursor: pointer;
+	overflow: hidden;
+	background: #353B3D;
+
+}
+
+.mac-lap
+{
+
+	position: relative;
+	background: none repeat scroll 0% 0% #D7D7D7;
+	height: 30px;
+	left: -80px;
+	border-bottom-left-radius: 9px;
+	border-bottom-right-radius: 9px;
+	top: -30px;
+	z-index: 120;
+	width: 840px;
+}
+
+.mac-monitor
+{
+	position: relative;
+	background: #353535;
+	width: 700px;
+	height: 420px;
+	border-radius: 9px 9px 9px 9px;
+	padding-top: 20px;
+	z-index: 100;
+	overflow: hidden;
+}
+
+.console-wrapper
+{
+	position: relative;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.language-c
+{
+	background: #353B3D;
+	border: 0px solid #FFF;
+	color: #EEEEEC;
+	padding: 0px !important;
+	-moz-tab-size: 2;
+	text-align: left;
+	font-size: 14px;
+
+}
+
+.include-keyword
+{
+	color: #33D9E3;	
+}
+
+.c-type
+{
+	color: #4E9A06;
+}
+
+.variable
+{
+	color: #4A990E;
+}
+
+.function
+{
+	color: #DD4A68;
+}
+
+.comments
+{
+	color: #6093CC;
+}
+
+.strings
+{
+	color: #F0C948;
+}
+
+.console
+{
+
+	left: 320px;
+	top: 140px;
+	opacity: 1;
+	width: 600px;
+}
+
+
+
+.console-text-root-magic
+{
+
+	color: #F5A101;
+	font-size: 15px;
+	text-align: left;
+
+}
+
+.console-text-root-error
+{
+
+	font-family: 'VT323';
+	color: #FFF;
+	font-size: 15px;
+	text-align: left;
+
+}
+
+.console-text-root
+{
+
+	color: #7EC8ED;
+	font-size: 15px;
+	text-align: left;
+
+}
+
