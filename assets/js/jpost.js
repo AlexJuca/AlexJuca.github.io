@@ -6,21 +6,13 @@ $(document).ready(function(e)
 		//alert(yPos);
 		if (yPos > 0 & yPos < 1800)
 		{
-			
-		
 			$('#drop-to-post').css('transition', 'all 0.2s ease-in').css('opacity','0');
 			$('#drop-to-post').css('webkit-transition', 'all 0.2s ease-in').css('opacity','0');
-
-
 		}
 
 		else
 		{
-			
-		
 			$('#drop-to-post').css('transition', 'all 0.2s ease-in').css('opacity','1');
-
-
 		}
 
 	});
