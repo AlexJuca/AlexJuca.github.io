@@ -3,38 +3,50 @@
 <!-- Hack to Learn, Don't Learn to hack. -->
 <!-- Created with all the love in the wereld || Mundo || World by Alexandre Juca -->
 <head> 
+<<<<<<< HEAD
 	<title> Alexandre Juca - Software Developer </title>
 
 	
-	<meta charset='utf-8'></meta> 
-	 <meta content="Alexandre Juca" property="og:title">
-    <meta content="RAlexandre Juca" name="twitter:title">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta content="Software developer, Web Developer Alexandre Juca" property="og:site_name">
-    <meta content="Alexandre Juca is a software developer" name="description">
-    <meta content="Alexandre Juca is a software developer" property="og:description">
-    <meta content="Alexandre Juca is a software developer" name="twitter:description">
-    <meta name="Author" content="Alexandre Juca" />
+    	<meta charset='utf-8'></meta> 
+    	<meta content="Alexandre Juca" property="og:title">
+    	<meta content="Alexandre Juca" name="twitter:title">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<meta content="Software developer, Web Developer Alexandre Juca" property="og:site_name">
+    	<meta content="Alexandre Juca is a software developer" name="description">
+    	<meta content="Alexandre Juca is a software developer" property="og:description">
+    	<meta content="Alexandre Juca is a software developer" name="twitter:description">
+    	<meta name="Author" content="Alexandre Juca" />
 
     <!-- Stylesheets -->
 	<link rel='stylesheet' href='assets/css/nintendo-min.css' type='text/css'>
 	<link rel='stylesheet' href='assets/css/animate-min.css' type='text/css'>
-	<!-- End of Stylesheets -->
+    <!-- End of Stylesheets -->
 
-	<!-- Fonts -->
-	<link href='http://fonts.googleapis.com/css?family=Josefin+Slab:400,700' rel='stylesheet' type='text/css'>
+    <!-- Fonts -->
+	<script src="//use.edgefonts.net/neuton;lekton.js"></script>
 	<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300,700' rel='stylesheet' type='text/css'>
-	<!-- End of Fonts -->
-	<!-- FontAwesome -->
+	
+    <!-- End of Fonts -->
+    <!-- FontAwesome -->
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-	<!-- FontAwesome -->
+    <!-- FontAwesome -->
         <link rel='stylesheet' href='assets/css/style-a-min.css' type='text/css'> 
-         <!-- JQuery --> 
+    <!-- JQuery --> 
          <script src='assets/js/jquery-2.1.1.min.js'></script>
+     <script>
+
+     	$(document).ready(function(){
+
+     		$('#hi-e').click(function(e){
+     			$('#pop').popover('show');
+     		};
+
+     	}));
+
+    </script>
 
 <body>
 	<nav class='navbar navbar-default'>
-
 		<!-- SOCIAL LINKS -->
 		<div class='social-box'>
 			<ul class='social-links-holder'> 
@@ -85,23 +97,20 @@
 			<p> JAVA, ECLIPSE, ANDROID STUDIO </p>
 			<h2 class='opac iknow-header' id='git'><i class="lightning fa fa-bolt"></i> GIT / GITHUB </h2>
 		</div>
-		
-
 	</div>
 	<!-- KNOW|HOW SECTION -->
-
 	<!-- PROJECTS SECTION -->
 	<div id='projects' class='ok-a'>
 		<div class='intro-box-b'>
-
 			<h1 class='header-red'> Projects </h1>
 			<div class='lightline'></div>
-			
 			<article class='projects'>
-
 				<h2> Lazy Androiders </h2>
 				<p><a href='https://github.com/AlexJuca/Lazy_Androiders/archive/master.zip'>Lazy Androiders.py</a> is an open source tool I created that
 				installs the appropriate tools for android development on Unix/Linux Systems. </p>
+				<hr>
+				<h2> Audio Spectrum Analayzer </h2>
+				<p><a href='https://github.com/AlexJuca/SpectrumVisualizer'>HTML5 Audio Spectrum Analyzer</a> is an audio spectrum visualizer built with the HTML5 Audio API and javascript.</p>
 				<hr>
 				<h2> Warp </h2>
 				<p><a href='https://github.com/AlexJuca/warp'>Warp</a> is a simple open source transparent proxy written in Python I contributed to. </p>
@@ -115,12 +124,8 @@
 				<h2> Kudos </h2>
 				<p><a href='#'>Kudos</a> is a platform for programmers to share information on their projects. Currently in Development. </p>
 				<hr>
-		
 			</article>
-
 		</div>
-                
-		
 	</div>
 	<!-- PROJECT SECTION -->
 
@@ -196,7 +201,7 @@
 <!-- BUBBLE MENU SECTION -->
 	<div class='menu-holder'>
 		<ul>
-			<li id='hi-e'><a href=''></a></li>
+			<li id='hi-e'><a id='pop' href="#" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?"></a></li>
 			<li id='i-know-e'><a href=''></a></li>
 			<li id ='projects-e'><a href=''></a></li>
 			<li id='blog-e'><a href=''></a></li>
@@ -222,5 +227,8 @@
 <script src='assets/js/jquery.scrollTo.min.js'></script>
 <script src='assets/js/jgo.js'></script>
 <script src='assets/js/wintracker.js'></script>
+<script src='assets/js/tooltip.js'></script>
+<script src='assets/js/popover.js'></script>
+
 </body>
 </html>

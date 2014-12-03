@@ -24,12 +24,14 @@
 	<!-- Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Josefin+Slab:400,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
 	<script src="//use.edgefonts.net/neuton;lekton.js"></script>
 	<!-- End of Fonts -->
 
 	<!-- FontAwesome -->
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<!-- FontAwesome -->
+		<link rel='stylesheet' href='../../assets/css/console.css' type='text/css'> 
         <link rel='stylesheet' href='../../assets/css/style-a-min.css' type='text/css'> 
          <!-- JQuery --> 
          <script src='../../assets/js/jquery-2.1.1.min.js'></script>
@@ -70,51 +72,50 @@
 
 
 		<div class='intro-box-blog'>
-			<h1 class='newsTitle'> Mama! Quero ser bom programador! </h1>
-			<h3> 19 de Novembro de 2014 </h3>
+			<h1 class='newsTitle'> Buffer Overflow </h1>
+			<h3> 20 de Novembro de 2014 </h3>
 
-			<img class='blog-img-header' src='../../assets/img/18112014.jpg'></img>
+			<img class='blog-img-header' src='../../assets/img/bufferoverflow.jpg'></img>
 
 			<article class='post-content'>
-				<p> 
-					Todos nós queremos ser bons programadores e para alguns isto parece ser um sonho que nunca vai ser realizado. Se você pensa que és um péssimo programador fica saber que muitos dos melhores já passaram por esta fase. 
+				<p> </p>
+
+
+
+
+				
+				<div class='console-wrapper'>
+
+					<div class='mac-screen'>
+				
+						 <pre class='language-c'>
+
+<span class='include-keyword'>#include</span>
+
+<span class='variable'>int</span> <span class='function'>main</span>(int argc, char *argv[])
+{
+        char full_name[] = {
+        'Z', 'e', 'd',
+        ' ', 'A', '.', ' ',
+        'S', 'h', 'a', 'w','\0'
+        };
+
+        int areas[] = {10, 12, 13, 14, 20};
+        char name[] = "Zed";
+
+
+
+						 </pre>
+					</div>		
 			
-				</p>
-				
 
-				<p>
-					Já observou uma criança brincando ou aprendeno uma coisa nova? Notaste como elas aprendem de uma forma tão rapida e facil?
-					Eu já, e fico admirado com isto. Eu lembro quando a minha mãe contava aos meus primos dos tempos quando eu tinha 3 anos de idade. Era muito curioso e tinha o habito de estragar coisas electrônicas em casa. A "mamoite" já perdeu muitas coisas por causa da minha curiosidade, e eu o que perdi? Absolutamente nada!! "Calma! como assim não perdeste nada Alexandre?" Bem, aquelas brincadeiras enquanto criança me ensinou muitas coisas e a até hoje uso esses conhecimentos quando aprendo algo novo.
-				</p>
-				
-				<img class='blog-img-header' src='../../assets/img/post-19112014pt2.gif'></img>
+				</div>
 
-				<p>
-					Quando havia necessidade de aprender Python a linguagem de programação criado pelo Guido van Rossum. Eu aprendia tudo da forma certa e estragava o côdigo todo para novamente deixar a funcionar. Como isso vai ajudar para ser um bom programador? Bem a verdade é que isto não vai te tornar um programador profissional, mas usando essa técnica vai facilitar a tua aprendizagem em aprender uma linguagen nova. A melhor forma da aprender a programar é errar, sério! Precisas errar muitas vezes para aprender como programar da forma certa, e porque não errar conscientemente e tentar saber porque o seu código não funciona? Assim irás acumular muita sabedoria sobre a linguagen que estas aprender.
-				</p>
-
-				<p>
-					"Ok Alexandre, tu explicaste como aprender uma linguagen de programação de uma forma melhor. Mais eu quero saber como ser um programador profissional cara, como fasso isso?" Okay, a reposta curta é, OPEN SOURCE (<a href="http://noticias.universia.com.br/destaque/noticia/2014/04/01/1092713/saiba-e-open-source-e-conheca-sua-importancia.html">Código Aberto</a>) !!! O que é open source? Open source é uma iniciativa que tem como fim promover a criação de softwares livres, ou seja, os softwares com códigos abertos para os usuários. Isso significa que podes ver o código fonte dos melhores programadores do mundo, estudar o código fonte do programador e usar isto para melhorar a suas técnicas.
-					Não achas isso uma maravilha? Eu acho. 
-				</p>
-
-				<p>
-					Procura um projecto que te interesa no <a href='http://www.github.com'>Github</a> faz um 'clone' com do mesmo projecto com git e tentar resolver alguns issues ou bugs no projecto. Quando tiveres a certeza que "arrancaste a pulga da pele do cão" manda um pull request no mantedor do projecto e ele irá verificar o teu código e provavelmente descutir contigo acerca das tuas mudanças. Lembra-se que é muito importante saber as regras do projecto antes de começar a modificar o código fonte, encontra a guía do estilo de código para o projecto e segue-lhe. Se o mantedor aceitar a tua contribuição, pede para fazer parte do mailing list do projecto e irás ter mais responsabilidades consoante o tempo e o teu esforço. Fazendo isto vai ajudar-te a ser um melhor programador. Vais aprender como lidar com outras pessoas, comunicar ideias para outros programadores no projecto e ganhar uma boa relação com a comunidade open source.
-				</p>
-
-				<p> 
-
-					Bem, na verdade existe vários factores para ser um bom programador e nem falei de maneiras de resolver problemas, algoritmos, estilo de código, design patterns e estrutura de software. Leva muito tempo para chegar num nível aonde você pode se achar bom, mas acredito com humildade, curiosidade e esforço todos nos podemos atingir a nossa meta. Irei postar mais sobre outros assuntos que podem te ajudar neste caminho, até o proxima! 
-
-				</p>
-
-
-				<div class='seperator'></div>
+				<div class='seperator'></div>	
 				
 
 				    <div id="disqus_thread"></div>
     <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
         var disqus_shortname = 'alexjucagithubcom'; // required: replace example with your forum shortname
 
         /* * * DON'T EDIT BELOW THIS LINE * * */
