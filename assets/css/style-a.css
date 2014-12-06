@@ -328,6 +328,8 @@ h1
 
 }
 
+
+
 .box-contact > li:nth-child(2):hover
 {
 
@@ -341,6 +343,14 @@ h1
 		background: #43609C;
 
 }
+
+.box-contact > li:hover > a >  i
+{
+
+		color: #FFF;
+
+}
+
 .projects > p > a
 {
 	color: #F17C72;
