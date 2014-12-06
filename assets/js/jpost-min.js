@@ -1,0 +1,1 @@
+$(document).ready(function(){$("#drop-to-post").addClass("animated zoomInRight"),$(window).scroll(function(){var b=window.scrollY;b>0&b<1800?($("#drop-to-post").css("transition","all 0.2s ease-in").css("opacity","0"),$("#drop-to-post").css("webkit-transition","all 0.2s ease-in").css("opacity","0")):$("#drop-to-post").css("transition","all 0.2s ease-in").css("opacity","1")})});
