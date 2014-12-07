@@ -601,6 +601,19 @@ hr
 	text-align: justify;
 }
 
+.advert
+{
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0px 230px 20px 200px;
+}
+
+.advert > p
+{
+	color: #404040;
+}
+
 .newsTitle
 {
 	color: #33383D;
