@@ -91,7 +91,7 @@ top: -510px;
 .console-wrapper
 {
 	position: relative;
-	width: 80%;
+	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 40px;
@@ -103,6 +103,15 @@ top: -510px;
 	position: relative;
 	text-align: center !important; 
 	top: 40px;
+}
+
+.code-caption-b
+{
+	position: relative;
+	text-align: center !important; 
+	top: 0px;
+	font-style: italic;
+	color: #888 !important;
 }
 
 .language-c
@@ -137,6 +146,21 @@ top: -510px;
 	color: #DD4A68;
 }
 
+.control-keyword
+{
+	color: #E3DF4D;
+}
+
+.file-ok
+{
+	color: #8BD035;
+}
+
+.ret-keyword
+{
+	color: #51445F;
+}
+
 .comments
 {
 	color: #6093CC;
@@ -145,6 +169,11 @@ top: -510px;
 .strings
 {
 	color: #F0C948;
+}
+
+.py-strings
+{
+	color: #70CD35;
 }
 
 .console
@@ -186,3 +215,7 @@ top: -510px;
 
 }
 
+.py-keyword
+{
+	color: #34D9C8;
+}

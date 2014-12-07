@@ -26,6 +26,7 @@ body
 
 li{
 	line-height:	40px;
+	font-size: 18px;
 }
 
 p{
@@ -700,6 +701,11 @@ hr
 		padding-top: 40px; 
 		background: none 50% 50% #F17C72 no-repeat;
 		background-attachment: fixed;
+	}
+
+	.intro-box
+	{
+		width: 80%;
 	}
 
 	.post-read
