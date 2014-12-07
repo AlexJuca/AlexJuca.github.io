@@ -76,16 +76,16 @@
 
 			<article class='post-content'>
 				<h2> Introdução </h2>
-				<p> Cython é uma linguagem de programação que torna escrever extensões em C para a linguagem Python tão fácil quanto o próprio Python. É uma linguagem de programação de alto nível, orientado a objetos, funcional e dinâmico. Sua principal característica é o suporte para as declarações de tipo estático. O código-fonte é traduzida em código C / C ++ , otimizado e compilado como módulos de extensão Python. Isso permite a execução de um programa muito rápido e forte integração com as bibliotecas externas de C, mantendo o programador em alta produção. </p>
+				<p> Cython é uma linguagem de programação que torna escrever extensões em C para a linguagem Python tão fácil quanto o próprio Python. É uma linguagem de programação de alto nível, orientada à objetos, funcional e dinâmica. Sua principal característica é o suporte para as declarações de tipo estática. O código-fonte é traduzido em código C / C ++ , otimizado e compilado como módulos de extensão Python. Isso permite a execução de um programa muito rápido e forte integração com as bibliotecas externas do C, mantendo o programador em alta produção. </p>
 
 				<ul>  <h3> O compilador Cython gera código em C que compila : </h3>
 					<li>com todos os principais compiladores(C e C++)</li>
-					<li>para todas plataformas principais </li>
+					<li>para todas as plataformas principais </li>
 					<li> Em python 2.6 até python 3.1 </li>
 				</ul>
 
 				<ul>  <h3> Actualmente Cython suporta a sintaxe do Python 2.6 </h3>
-					<li> Suporte para python 3.1 e acima esta em desenvolvimento </li>
+					<li> Suporte para python 3.1 e acima está em desenvolvimento </li>
 				</ul>
 
 
@@ -109,11 +109,11 @@ sudo apt-get install cython
 				<p> Isso irá instalar o Cython e o "python developement headers" ou cabeçalhos para desenvolvimento em Python na sua máquina. </p>
 				
 				<h2> Compilar código Python para C </h2>
-				<p> Agora que tens cython instalado na sua máquina, vamos primeiramente testar a velocidade entre C e Python para conhecer a diferença em velocidade de execução e iremos compilar o nosso Código Cython para C e ver os beneficios que ela poderia trazer para nos. </p>
+				<p> Agora que tens cython instalado na sua máquina, vamos primeiramente testar a velocidade entre C e Python para conhecer a diferença em velocidade de execução e iremos compilar o nosso Código Cython para C e ver os benefícios que ela poderia trazer para nós. </p>
 
-				<p> Na linha de comandos cria um novo arquivo usando o editor de texto nano com o nome fib.py. Vamos criar um script em Python e C que ira retornar o enésimo elemento da seqüência de Fibonacci. </p>
+				<p> Na linha de comandos cria um novo arquivo usando o editor de texto nano com o nome fib.py. Vamos criar um script em Python e C que irá retornar o enésimo elemento da seqüência de Fibonacci. </p>
 
-				<p class='code-caption-b'>A formula para retornar o enésimo elemento da seqüência de Fibonacci</p>
+				<p class='code-caption-b'>A fórmula para retornar o enésimo elemento da seqüência de Fibonacci.</p>
 				<img src='../../assets/img/fb01.gif'></img>
 
 				<p class='code-caption-b'> >Vamos criar um arquivo que irá armazenar código em Python.</p>
@@ -131,7 +131,7 @@ alexjuca@alexjuca.github.io:~/Documents/BlogPostProject/Cython$ nano fib.py
 
 				</div>
 
-				<p class='code-caption-b'>> Digite o seguinte código e salva-o com a combinação das teclas Ctrl + O </p>
+				<p class='code-caption-b'>> Digite o seguinte código e salvá-o com a combinação das teclas Ctrl + O </p>
 				
 				<div class='console-wrapper'>
 						<div class='mac-screen'>
@@ -169,7 +169,7 @@ alexjuca@alexjuca.github.io:~/Documents/BlogPostProject/Cython$ nano fib.c
 			
 
 				</div>
-<p class='code-caption-b'>> Digite o seguinte código e salva-o com a combinação das teclas Ctrl + O </p>
+<p class='code-caption-b'>> Digite o seguinte código e salvá-o com a combinação das teclas Ctrl + O </p>
 
 				<div class='console-wrapper'>
 						<div class='mac-screen'>
@@ -248,7 +248,7 @@ alexjuca@alexjuca.github.io:~/Documents/BlogPostProject/Cython$ ls
 					</div>		
 				</div>
 				<!-- console -->
-   				<p> Iremos executar o ficheiro executável com o progama time para saber o tempo que o cpu leva para terminar o processamento do programma. Lembra que o programa irá calcular o enésimo elemento da seqüência de Fibonacci e imprimir-la na tela </p>
+   				<p> Iremos executar o ficheiro executável com o progama time para saber o tempo que o cpu leva para terminar o processamento do programa. Lembra que o programa irá calcular o enésimo elemento da seqüência de Fibonacci e imprimi-la na tela </p>
 
    				<p class='code-caption-b'>> Execute o ficheiro executável usando time </p>
 				<!-- console -->
@@ -274,7 +274,7 @@ sys	0m0.000s
 				<!-- console -->
 <p> Prontos o código foi executado com sucesso e retornou o valor da seqüência de fibonnaci e tambem o tempo de execução. Levou 0.021s na minha máquina, é possível que ele retorne um tempo diferente na sua máquina por causa do CPU e OS que são diferentes (Na verdade existem várias coisas que podem influenciar os resultados, incluindo os processos, programas abertos e até a sua respiração, ok menos a respiração) A máquina que usei para testes utiliza um processador AMD Athlon II X3 e tem Ubuntu 14.04 como Sistema operativo. </p>
 
-<p> Vamos executar o próximo script em Python. Digite o seguinte código na linha de comandos no mesmo diretório onde coloucaste os ficheiros que criamos anteriormente. </p>
+<p> Vamos executar o próximo script em Python. Digite o seguinte código na linha de comandos no mesmo diretório onde colocaste os ficheiros que criamos anteriormente. </p>
 
 <p class='code-caption-b'>> Executa o código em python usando time </p>
 				<!-- console -->
@@ -299,7 +299,7 @@ sys	0m0.008s
 				</div>
 				<!-- console -->
 
-				<p> Aí cara, é obvio que o programa escrito em C é muito mais rápido que o programa escrito Python2.7. C é 35 vezes mais rápido neste algoritmo que o Python (740 / 21 = 35.). È isso que esperamos de uma linguagem compilada como C que foi criado para ser eficiente e rápido. Mais o importante aqui não é mostrar que C é mais rápido, mas queremos saber como o uso de Cython pode melhorar o desempenho dos nossos programas e facilitar o desenvolvimento de software usando o sintaxe simples do Python e a velocidade e eficiencia da linguagen C. </p>
+				<p> Aí cara, é obvio que o programa escrito em C é muito mais rápido que o programa escrito Python2.7. C é 35 vezes mais rápido neste algoritmo que o Python (740 / 21 = 35.). É isso que esperamos de uma linguagem compilada como C que foi criada para ser eficiente e rápida. Mais o importante aqui não é mostrar que C é mais rápido, mas queremos saber como o uso de Cython pode melhorar o desempenho dos nossos programas e facilitar o desenvolvimento de software usando o sintaxe simples do Python e a velocidade e eficiência da linguagen C. </p>
 
 				<p> Vamos criar um novo arquivo que irá armazenar código em Cython.</p>
 				
@@ -315,7 +315,7 @@ alexjuca@alexjuca.github.io:~/Documents/BlogPostProject/Cython$ nano cyfib.pyx
 					</div>		
 				</div>
 
-				<p class='code-caption-b'>> Digite o seguinte código e salva-o com a combinação das teclas Ctrl + O </p>
+				<p class='code-caption-b'>> Digite o seguinte código e salvá-o com a combinação das teclas Ctrl + O </p>
 
 				<div class='console-wrapper'>
 						<div class='mac-screen'>
@@ -335,7 +335,7 @@ alexjuca@alexjuca.github.io:~/Documents/BlogPostProject/Cython$ nano cyfib.pyx
 
 				</div>
 
-				<p> O código em Cython aparece identico a código em Python, mas observa que declaramos a função cdef e tambem declaramos seu parâmetro n como inteiro. Cython usa essas informações para criar código otimizados. Nos sabemos que estamos falando de um inteiro e tambem conhecemos o scopo dos dados dentro do programa e assim possibilita o armazenamento de dados na pilha (stack).</p>
+				<p> O código em Cython aparece identico a código em Python, mas observa que declaramos a função cdef e tambem declaramos seu parâmetro n como inteiro. Cython usa essas informações para criar código otimizados. Nós sabemos que estamos falando de um inteiro e tambem conhecemos o scopo dos dados dentro do programa e assim possibilita o armazenamento de dados na pilha (stack).</p>
 
 				<p>Compila o código Cython para C usando os seguintes comandos</p>
 
@@ -432,7 +432,7 @@ sys	0m0.004s
 				</div>
 				<!-- console -->
 
-				<p> Ótimo, o programa escrito em Cython e convertido para C e finalmente compilado em executável retornou o resultado depois de 0.117s. Isso é muito bom. Mostrando que é 6 vezes mais rápida (740 / 117 = 6.32) do que código em Python. È possível aumentar ainda mais a eficiencia e rapizés do programa usando algumas otimizações. </p>
+				<p> Ótimo, o programa escrito em Cython e convertido para C e finalmente compilado em executável retornou o resultado depois de 0.117s. Isso é muito bom. Mostrando que é 6 vezes mais rápida (740 / 117 = 6.32) do que código em Python. É possível aumentar ainda mais a eficiência e rapides do programa usando algumas otimizações. </p>
 
 				<h2> Alternativas </h2>
 				<p> Este tipo de ligação de idioma pode também ser
@@ -451,10 +451,10 @@ sys	0m0.004s
 			</p>
 
 				<h2> Conclusão </h2>
-				<p> Aprendemos que podemos usar Cython para escrever programas escritos em Python que podem ser executadas mais rápidas mas será que tem outras razões para usar-la? Sim existem.</p>
+				<p> Aprendemos que podemos usar Cython para escrever programas escritos em Python que podem ser executados mais rápidamente mas será que tem outras razões para usar-la? Sim existem.</p>
 
 				<ul><h3>Para escrever Extensões em C para Cpython</h3>
-					<li>Não trouca de linguagem só para ter codigo mais rápido</li>
+					<li>Não troque de linguagem só para ter código mais rápido</li>
 					<li>acelerar módulos Python existentes.
 concentrar em otimizações, não em reescrevendo código!</li>
 <li>Não trouca de linguagem só para ter codigo mais rápido</li>
