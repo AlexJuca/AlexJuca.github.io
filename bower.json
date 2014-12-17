@@ -1,0 +1,26 @@
+{
+  "name": "AlexJuca.github.io",
+  "version": "1",
+  "homepage": "https://github.com/AlexJuca/AlexJuca.github.io",
+  "authors": [
+    "AlexJuca <corextechnologies@gmail.com>"
+  ],
+  "description": "Personel Website using Material Design",
+  "main": "index.html",
+  "keywords": [
+    "material",
+    "design"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.5.2"
+  }
+}

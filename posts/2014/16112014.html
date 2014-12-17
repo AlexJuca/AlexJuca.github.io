@@ -16,6 +16,12 @@
     <meta content="Blog? Porquê?" name="twitter:description">
     <meta name="Author" content="Alexandre Juca" />
 
+    <!-- Polymer -->
+    <script src="../../bower_components/webcomponentsjs/webcomponents.js"></script>
+	<link rel="import"
+  href="../../bower_components/floating-button.html">
+  <!-- Poylmer -->
+
     <!-- Stylesheets -->
 	<link rel='stylesheet' href='../../assets/css/nintendo-min.css' type='text/css'>
 	<link rel='stylesheet' href='../../assets/css/animate-min.css' type='text/css'>
@@ -35,6 +41,25 @@
          <script src='../../assets/js/jquery-2.1.1.min.js'></script>
 
 <body class='body'>
+	<!-- Facebook crap -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1563929520491346',
+      xfbml      : true,
+      version    : 'v2.2'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+<!-- Facebook crap -->
 	<nav class='navbar navbar-default'>
 
 		<!-- SOCIAL LINKS -->
@@ -74,7 +99,7 @@
 			<h3> 16 de Novembro de 2014 </h3>
 
 			<img class='blog-img-header' src='../../assets/img/blogporque.png'></img>
-
+			<floating-button id='share'></floating-button>
 			<article class='post-content'>
 				<p> 
 					" Ooooo Alex! Por que você está a criar um blog? Ninguém vai ler!" disse uma parte de mim. Cala-te! Disse outra! A verdade é que já existem vários blogs por aí. Tomei esta decisão por vários motivos, o primeiro é que eu falo inglês e todos os livros que leio são escritos em inglês e isso as vezes me dificulta quando o assunto é partilhar meus conhecimentos com outras pessoas. Eu falo português há 4 anos e notei a necessidade de melhorar a minha escrita usando este blog como um medium. Como estou na fase de aprendizagem gostaria da tua ajuda, se existe um erro de "sintaxe" aqui, por favor não hesite em me avisar. Alguns artigos vão estar em inglês, isso, porque não queria me limitar em usar uma só linguagem. Desculpas.
@@ -132,5 +157,21 @@
 <script src='../../assets/js/jquery.scrollTo.min.js'></script>
 <script src='../../assets/js/jgo.js'></script>
 <script src='../../assets/js/wintracker.js'></script>
+<script type="text/javascript">
+
+	$(document).ready(function()
+	{
+			$("#share").click(function()
+			{
+
+				FB.ui({
+					  method: 'share',
+					  href: 'https://alexjuca.github.io/',
+					}, function(response){});
+
+			});
+	});
+
+</script>
 </body>
 </html>

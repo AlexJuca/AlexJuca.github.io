@@ -1,12 +1,11 @@
-body
-{
+body{
 
 	margin: 0px;
 	font-family: neuton, serif;
 	font-size: 14px;
 	font-weight: normal;
 	color: #404040;
-	background: #4E4C4C;
+	background: #1DE9B6;
 	text-rendering: optimizeLegibility;
 
 }
@@ -40,7 +39,7 @@ p{
 q
 {
 	font-size: 28px;
-	color: #FFF;
+	color: #B9F6CA;
 	font-weight: 600;
 }
 
@@ -50,7 +49,7 @@ h2
 }
 .iknow-header
 {
-	color: #F17C72;
+	color: #424342;
 }
 cite
 {
@@ -83,7 +82,7 @@ a{
 {
 	margin-bottom: 0;
 	border-radius: 0;
-	background: #4E4C4C;
+	background: #1DE9B6;
 	height: 30px;
 }
 
@@ -106,6 +105,7 @@ a{
 {
 	border: 5px solid #FFF;
 	transition: 0.2s all ease-in-out;
+	width: 100px;
 }
 
 .my-profile:hover
@@ -151,7 +151,7 @@ a{
 
 .header-red
 {
-	color: #F17C72;
+	color: #1DE9B6;
 	font-size: 44px;
 
 }
@@ -223,7 +223,7 @@ h1
 
 .intro-wrapper, .ok, .ok-a, .ok-aj, .ok-c, .ok-d, .ok-e
 {
-	background: url('../img/cover.jpg') repeat scroll 0% 0% #F17C72;
+	background: #1DE9B6;
 	background-attachment: fixed;
 	position: relative;
 	min-height: 700px;
@@ -244,7 +244,7 @@ h1
 .ok
 {
 
-	background: none repeat scroll 0% 0% #4E4C4C;
+	background: none repeat scroll 0% 0% #1DE9B6;
 
 }
 
@@ -257,13 +257,13 @@ h1
 
 .ok-b
 {
-	background: #6A9298;
+	background: #1DE9B6;
 }
 
 .ok-d
 {
 	padding-top: 40px; 
-	background: url('../img/rocket.png') 50% 50% #F17C72 no-repeat;
+	background: #1DE9B6;
 	background-attachment: fixed;
 }
 
@@ -352,9 +352,16 @@ h1
 
 }
 
+#share
+{
+	position: absolute;
+	top: 300px;
+	left: 400px;
+}
+
 .projects > p > a
 {
-	color: #F17C72;
+	color: #1DE9B6;
 }
 
 .projects > p
@@ -530,7 +537,7 @@ h1
 
 .social-links-a
 {
-	color: #E3564C;
+	color: #33B679;
 }
 
 
@@ -569,8 +576,8 @@ h1
 	text-align: center;
 	font-weight: bold;
 	font-size: 14px;
-	border-image: url('../img/border-strip.png') 20 0 repeat;
-	border-top: 5px solid;
+	border-image: url('../img/dotted.png') 
+	border-top: 8px solid;
 }
 
 hr
@@ -849,3 +856,17 @@ hr
     -webkit-transform: rotate(-360deg);
   }
 }
+
+
+
+
+
+    #owl-demo .item{
+    margin: 3px;
+    }
+    #owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+    }
+
