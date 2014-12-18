@@ -16,6 +16,12 @@
     <meta content="Cinyur: O assistente pessoal de cinema " name="twitter:description">
     <meta name="Author" content="Alexandre Juca" />
 
+    <!-- Polymer -->
+    <script src="../../bower_components/webcomponentsjs/webcomponents.js"></script>
+	<link rel="import"
+  href="../../bower_components/floating-button.html">
+   <!-- Polymer -->
+
     <!-- Stylesheets -->
 	<link rel='stylesheet' href='../../assets/css/nintendo-min.css' type='text/css'>
 	<link rel='stylesheet' href='../../assets/css/animate-min.css' type='text/css'>
@@ -35,6 +41,26 @@
          <script src='../../assets/js/jquery-2.1.1.min.js'></script>
 
 <body class='body'>
+<!-- Facebook crap -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1563929520491346',
+      xfbml      : true,
+      version    : 'v2.2'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+<!-- Facebook crap -->
+
 	<nav class='navbar navbar-default'>
 
 		<!-- SOCIAL LINKS -->
@@ -74,7 +100,7 @@
 			<h3> 17 de Novembro de 2014 </h3>
 
 			<img class='blog-img-header' src='../../assets/img/17112014.png'></img>
-
+			<floating-button id='share'></floating-button>
 			<article class='post-content'>
 				<p> 
 					
@@ -130,6 +156,7 @@
 
 <!-- SCROLL JS Section -->
 <ul class='post-read'>
+		
 		<li id='drop-to-post'> Ler Postagem: <i class="fa fa-chevron-down post-read-icon"></i></li>
 </ul>
 <!-- END OF SCROLL JS Section -->
@@ -151,5 +178,22 @@
 <script src='../../assets/js/jgo.js'></script>
 <script src='../../assets/js/jpost.js'></script>
 <script src='../../assets/js/wintracker.js'></script>
+
+<script type="text/javascript">
+
+	$(document).ready(function()
+	{
+			$("#share").click(function()
+			{
+				var url = document.URL;
+				FB.ui({
+				  method: 'share',
+				  href: url,
+				}, function(response){});
+
+			});
+	});
+
+</script>
 </body>
 </html>
