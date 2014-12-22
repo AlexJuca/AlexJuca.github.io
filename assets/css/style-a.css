@@ -49,7 +49,7 @@ h2
 }
 .iknow-header
 {
-	color: #424342;
+	color: #1DE9B6;
 }
 cite
 {
@@ -84,6 +84,24 @@ a{
 	border-radius: 0;
 	background: #1DE9B6;
 	height: 30px;
+	opacity: 0.9;
+}
+
+.profile-nav
+{
+	width: 32px;
+	height: 32px;
+	position: relative;
+	margin-left: 40px;
+	padding: 10px;
+	float: left;
+	top: -5px;
+}
+
+#nav-profile
+{
+	opacity: 0;
+	border: 3px solid #FFF;
 }
 
 .intro-to-me
@@ -98,7 +116,7 @@ a{
 	width: 300px;
 	height: 50px;
 	float: right;
-	top: -25px;
+	top: -33px;
 }
 
 .my-profile
@@ -149,9 +167,9 @@ a{
 
 }
 
-.header-red
+.header-a
 {
-	color: #1DE9B6;
+	color: #354D59;
 	font-size: 44px;
 
 }
@@ -244,7 +262,7 @@ h1
 .ok
 {
 
-	background: none repeat scroll 0% 0% #1DE9B6;
+	background: none repeat scroll 0% 0% #354D59;
 
 }
 
@@ -257,7 +275,12 @@ h1
 
 .ok-b
 {
-	background: #1DE9B6;
+	background: #7EC9AC;
+}
+
+.email
+{
+	color: #404046;
 }
 
 .ok-d
@@ -719,7 +742,7 @@ hr
 	.ok-d
 	{
 		padding-top: 40px; 
-		background: none 50% 50% #F17C72 no-repeat;
+		background: none 50% 50% #1DE9B6 no-repeat;
 		background-attachment: fixed;
 	}
 	q
@@ -785,7 +808,7 @@ hr
 	}	
 
 	.iknow-header {
-    color: #F17C72;
+    color: #354D59;
     font-size: 19px;
 	}
 
@@ -804,7 +827,7 @@ hr
 }
 
 .cube1, .cube2, .cube3 {
-  background-color: #FFD08D;
+  background-color: #1DE9B6;
   width: 16px;
   height: 16px;
   border-radius: 10px;
@@ -817,7 +840,7 @@ hr
 }
 
 .cube2 {
-	background: #4E4C4C;
+	background: #354D59;
   -webkit-animation-delay: -0.9s;
   animation-delay: -0.9s;
 }
