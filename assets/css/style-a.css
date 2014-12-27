@@ -736,6 +736,25 @@ hr
 {
 	font-family: neuton, serif;
 }
+@media screen and (max-width: 1600px) {
+	#share 
+	{
+	    position: absolute;
+	    top: 280px;
+	    left: -150px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+	#share
+	{
+		position: absolute;
+		top: 280px;
+		left: -250px;
+	}
+
+}
 
 @media screen and (max-width: 360px) {
 
@@ -745,6 +764,25 @@ hr
 		background: none 50% 50% #1DE9B6 no-repeat;
 		background-attachment: fixed;
 	}
+
+	#share
+	{
+		position: absolute;
+		top: 160px;
+		left: -410px;
+	}
+
+	.social-box {
+	    top: -34px;
+	    left: 20px;
+	}
+
+	.social-links-holder
+	{
+		top: 10px;
+
+	}
+
 	q
 	{
 		font-size: 22px;
