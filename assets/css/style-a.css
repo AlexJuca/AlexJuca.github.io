@@ -380,7 +380,20 @@ h1
 	position: absolute;
 	top: 300px;
 	left: 400px;
+	
 }
+
+#paper_fab2
+{
+	transition: all 0.25s ease-in-out;
+}
+
+#paper_fab2:hover
+{
+	transform: rotate(190deg);
+}
+
+
 
 .projects > p > a
 {
