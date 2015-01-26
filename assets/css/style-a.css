@@ -750,6 +750,16 @@ hr
 	font-family: neuton, serif;
 }
 
+@media screen and (max-width: 320px) 
+{
+    
+    .social-box {
+        top: -34px;
+        left: 40px;
+    }
+    
+}
+
 @media screen and (max-width: 1600px) {
 	#share 
 	{
@@ -932,11 +942,7 @@ hr
   }
 }
 
-
-
-
-
-    #owl-demo .item{
+#owl-demo .item{
     margin: 3px;
     }
     #owl-demo .item img{
