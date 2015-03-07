@@ -39,7 +39,7 @@ p{
 q
 {
 	font-size: 28px;
-	color: #B9F6CA;
+	color: #FFF;
 	font-weight: 600;
 }
 
@@ -49,7 +49,7 @@ h2
 }
 .iknow-header
 {
-	color: #1DE9B6;
+	color: #FF9666;
 }
 cite
 {
@@ -82,7 +82,7 @@ a{
 {
 	margin-bottom: 0;
 	border-radius: 0;
-	background: #1DE9B6;
+	background: none repeat scroll 0% 0% #1695A3;
 	height: 30px;
 	opacity: 0.9;
 }
@@ -241,7 +241,7 @@ h1
 
 .intro-wrapper, .ok, .ok-a, .ok-aj, .ok-c, .ok-d, .ok-e
 {
-	background: #1DE9B6;
+	background: none repeat scroll 0% 0% #1695A3;
 	background-attachment: fixed;
 	position: relative;
 	min-height: 700px;
@@ -273,6 +273,12 @@ h1
 
 }
 
+.beezond-link
+{
+    color: #FFE184;
+}
+
+
 .ok-b
 {
 	background: #7EC9AC;
@@ -286,7 +292,7 @@ h1
 .ok-d
 {
 	padding-top: 40px; 
-	background: #1DE9B6;
+	background: #FF9666;
 	background-attachment: fixed;
 }
 
@@ -394,10 +400,9 @@ h1
 }
 
 
-
 .projects > p > a
 {
-	color: #1DE9B6;
+	color: #FF9666;
 }
 
 .projects > p
@@ -573,7 +578,7 @@ h1
 
 .social-links-a
 {
-	color: #33B679;
+	color: #FFF;
 }
 
 
@@ -730,19 +735,19 @@ hr
 }
 
 .post-read > li{
-	list-style: none;
-	padding: 3px;
-	border-radius: 30px;
-	color: #D55963;
-	font-size: 116%;
-	font-weight: 600;
-	margin-right: 20px;
-	width: 120px;
-	text-align: center;
-	transition: all 0.3s ease-in-out;
-	position: relative;
-	height: 40px;
-	background: #FFF;
+	list-style: outside none none;
+    padding: 3px;
+    border-radius: 3px;
+    color: white;
+    font-size: 116%;
+    font-weight: 600;
+    margin-right: 20px;
+    width: 120px;
+    text-align: center;
+    transition: all 0.3s ease-in-out 0s;
+    position: relative;
+    height: 40px;
+    background: none repeat scroll 0% 0% orange;
 }
 
 .post-content > p
@@ -868,9 +873,9 @@ hr
 	.contact-me {
     	font-size: 22px;
 	}	
-
+    
 	.iknow-header {
-    color: #354D59;
+    color: #FF9666;
     font-size: 19px;
 	}
 
