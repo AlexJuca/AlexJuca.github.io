@@ -6,12 +6,18 @@
 	
 }
 
+@font-face
+{
+      font-family: 'Brandon';
+      src: url('../fonts/Brandon.woff');
+	
+}
 
 body{
 
 	margin: 0px;
-	font-family: neuton, serif;
-	font-family: 'Walsh';
+	/* font-family: neuton, serif; */
+	font-family: 'Brandon';
 	font-size: 14px;
 	font-weight: normal;
 	color: #404040;
@@ -23,9 +29,8 @@ body{
 .body
 {
 	margin: 0px;
-	font-family: neuton,serif;
-	font-family: 'Walsh';
 	font-size: 14px;
+    font-family: 'Brandon';
 	font-weight: normal;
 	color: #404040;
 	background: #FFF;
@@ -664,7 +669,7 @@ hr
 
 .post-content > p
 {	
-	font-family: 'Walsh';
+	font-family: 'Brandon';
 	color: #33383D;
 	text-align: justify;
 }
@@ -772,9 +777,9 @@ hr
 
 .post-content > p
 {
-	font-family: 'Walsh';
-	line-height: 1.4em;
-	font-size: 18px;
+	font-family: 'Brandon';
+	line-height: 1.6em;
+    font-size: 1.85rem;
 }
 
 @media screen and (max-width: 320px) 
