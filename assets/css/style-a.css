@@ -778,8 +778,9 @@ hr
 .post-content > p
 {
 	font-family: 'Brandon';
-	line-height: 1.6em;
-    font-size: 1.85rem;
+	font-size: 19px;
+    line-height: 40px;
+    font-weight: 400;
 }
 
 @media screen and (max-width: 320px) 
