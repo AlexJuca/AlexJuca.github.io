@@ -97,9 +97,9 @@
 
 			<img class='blog-img-header' src='../../assets/img/multi-color-wifi-routers_1x.png'></img>
 			<floating-button id='share'></floating-button>
-
+            
 			<article class='post-content'>
-                    <p>It was midnight and I was doing some research on a project I was working on when all of a sudden my internet                            connection "died". What? Seriously? What day is it today? My contract with my "loyal" ISP had ended. I needed to                        pay up again. Why could'nt internet just be free? My mind quickly went on a journey as I stood by the                                  window and stared at the starry skies, I thought to myself, "What if this WIMAX access point I 
+                    <p>It was midnight and I was doing some research on a project I was working on when all of a sudden my internet                            connection "died". What? Seriously? What day is it today? My contract with my "loyal" ISP had ended. I needed to                        pay up again. Why could'nt internet just be free? My mind quickly went on a journey as I stood by my bedroom                           window and stared at the starry skies, I thought to myself, "What if this WIMAX access point I 
                        am using is vulnerable? What if I can access the internet without paying one hundred dead presidents?" 
                        A part of me said, "No, company X is a huge company. They must have really smart                                                        engineers working on their infrastructure. They are one of the countries biggest ISP so they and users like me                          should be safe, right?" 
                     </p>
@@ -134,10 +134,10 @@ and if one's concious allows it raise hell on earth or in this case raise hell o
         <p>
             After an hour or so <a href='https://github.com/AlexJuca/LulZye.py'>LulZye</a> was ready for action and passed the ip range for it to scan. I found the IP range to scan by using whois on company X's ip. and noticed that most devices were on the same subnet. eg 196.210.61.0 to 196.210.127.255. So I informed LulZye the ip range to scan, eg 196.210.61.0/24 and if it found a device it would first check if it was vulnerable and attempt a login with the "well protected password" which was actually stored as a md5 hash in the device so I had to send it using the md5 format. </p>
         
-        <p class='code-caption-b'> password being stored as an md5.</p>
+        <p class='code-caption-b'> password being stored as an md5 hash.</p>
         <img class='blog-img-header' src="../../assets/img/md5.png">
 
-        <p>The tool than attempts to get the wimax authentication of the device by scraping the pages entire html structure and finding the username which was something like 279098122, the password,  which was somewhat hidden but the great engineers that made the device actually stored it in the value attribute of the password input tag like such: "input type="password" ... value="X98212"></input>/" as well as the devices mac address which displayed in the devices detail page. After 15 minutes LulZye had found over 1000 vulnerable devices and had stored authentication information for each and every one of them. I smiled as I opened the file holding the stored authentication details.
+        <p>The tool than attempts to get the wimax authentication of the device by scraping the pages entire html structure and finding the username which was something like 279098122, the password,  which was somewhat hidden but the great engineers that made the device actually stored it in the value attribute of the input tag like such: "input type="text" ... value="x98212"></input>/" as well as the devices mac address which displayed in the devices detail page. After 15 minutes LulZye had found over 1000 vulnerable devices and had stored authentication information for each and every one of them. I smiled as I opened the file holding the stored authentication details.
         
         </p>
 <p class='code-caption-b'> created a simple algorithm to scrape the information on this page.</p>
@@ -185,9 +185,9 @@ the puzzle. I had to run telnet and point to the devices ip like such: telnet 19
 <p class='code-caption-b'> The Devices cli interface via telnet.</p>
  <img class='blog-img-header' src='../../assets/img/telnet.png'>
 
-<p> I was then finally inside devices cli interface and used the command I head learnt to change the mac. I waited anxiously as the device restarted. 2 minutes later nothing happened. I was distraught! What! Nothing? No ways! I than remembered that EAP would not allow multiple users with the same mac and net configurations to access the network at the same time. So I thought I should find a way to somehow switch off the victims device just like a malicious person would. I noticed the device automatically restarted after I changed the mac. So an option would be restarting the device using a command I had found in the manual. </p>
+<p> I was then finally inside devices cli interface and used the command I had learnt to change the mac. I waited anxiously as the device restarted. 2 minutes later nothing happened. I was distraught! What! Nothing? No ways! I than remembered that EAP would not allow multiple users with the same mac and net configurations to access the network at the same time. So I thought I should find a way to somehow switch off the victims device just like a malicious person would. I noticed the device automatically restarted after I changed the mac. So an option would be restarting the device using a command I had found in the manual. </p>
 
-<p class='code-caption-b'> Restarting victim device using cli interface.</p>
+<p class='code-caption-b'> Restarting victim device using it's cli interface.</p>
  <img class='blog-img-header' src='../../assets/img/restart.png'>
 
 <p> After a few minutes I tried pinging google.com and amazingly! I had sucessfully exploited a vulnerability in company X's security procedures.
@@ -198,7 +198,7 @@ I congratulated myself on the achievemenet and wrote all the steps down so I can
 <p>
  Next morning I was woke up by a nagging homo-plyo-talk-alot-o-saurus (My sister). She was going on about something. All I thought was, "Is the internet still working as it should?" I logged onto my linux machine and pinged google.com and voila it was working very well.
 An hour or so later I got dressed up in my "yellow suite" I went to company X's offices and asked to talk to someone with authority. 
-They looked at me like a dirty dog. I laughed inside because I find it funny how people can be so ignorant when in the reality they don't know much. A technician came out of a room and walked towards me like the presidents son. He asked me what I had to say. I said, "That I had found a vulnerability in the companies device that would allow a malicious person to steal customers internet connection." His reply? an obnoxious "Get out! We are the countries biggest Telecoms company! Our infrastructure is totally secure! We don't have times for games. "
+They looked at me like a dirty dog. I laughed inside because I find it funny how people can be so ignorant when in the reality they don't know much. A technician came out of a room and walked towards me like the presidents son. He asked me what I had to say. I said, "That I had found a vulnerability in the companies device that would allow a malicious person to steal customers internet connection." His reply? an obnoxious "Get out! We are the countries biggest Telecoms company! Our infrastructure is totally secure! We don't have time for games. "
 </p>
 
 <h2>What company X can do to secure themselves.</h2>
@@ -217,18 +217,18 @@ They looked at me like a dirty dog. I laughed inside because I find it funny how
     If Company X had hired penetration testers to test the security of their devices they would have known about these possible flaws and
     would have strengethened their security by a huge margin. I truly believe that in the age we live in most companies are supposed to have security advisors to identify flaws in their systems. Programmers should have atleast some knowledge in security to deploy secure code.
     
-    One of the ways company X can do to protect themselves is:
+    Some of the things company X can do to protect themselves is: </p>
     
-    1.Block all traffic on port 23 so a malicious individual can not access the devices cli interface. Company X can do this by configuring a Load Balancer to block telnet traffic.
+<p>1.Block all traffic on port 23 so a malicious individual can not access the devices cli interface. Company X can do this by configuring a Load Balancer to block telnet traffic. </p>
     
-    2.Have technicians change the customer's admin passwowrds when customers makes the payment.
+<p>2.Have technicians change the customer's admin passwowrds when customers makes the payment. </p>
+
+<p>3.Block http traffic from the internet and only allow users inside the private network to connect to admin page. </p>
     
-    3.Block http traffic from the internet and only allow users inside the private network to connect to admin page. 
-    
-    4.Be more open with customers regarding security issues and listen to people with helpful information regarding device security even rewarding them if necessary. Learn from facebook, google and many other companies. There is so much more to gain that way. 
+ <p>4.Be more open with customers regarding security issues and listen to people with helpful information regarding device security even rewarding them if necessary. Learn from facebook, google and many other companies. There is so much more to gain that way. 
 </p>
 
-<p> I am Alexandre Juca a pentester at night a teacher by day and a software developer in the dreams I am living.</p>
+<p> </p>
 
 
 
