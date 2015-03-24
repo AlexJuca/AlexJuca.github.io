@@ -408,11 +408,13 @@ h1
 #paper_fab2
 {
 	transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
 }
 
 #paper_fab2:hover
 {
 	transform: rotate(190deg);
+    -webkit-transform: rotate(190deg);
 }
 
 
