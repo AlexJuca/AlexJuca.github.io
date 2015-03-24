@@ -791,6 +791,13 @@ hr
         left: 40px;
     }
     
+    .blog-img-header
+	{
+	    margin-bottom: 40px;
+	    margin-top: 40px;
+	    width: 90%;
+	}
+    
 }
 
 @media screen and (max-width: 1600px) {
@@ -810,6 +817,8 @@ hr
 		top: 280px;
 		left: -250px;
 	}
+    
+    
 
 }
 
