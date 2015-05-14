@@ -1,3 +1,5 @@
+/* Trying to steal something? Haha Follow me on twiiter right now! @ajxdev */
+
 
 @font-face
 {
@@ -98,7 +100,7 @@ a{
 {
 	margin-bottom: 0;
 	border-radius: 0;
-	background: none repeat scroll 0% 0% #1695A3;
+	background: none repeat scroll 0% 0% transparent;
 	height: 30px;
 	opacity: 0.9;
 }
@@ -263,6 +265,7 @@ h1
 .intro-wrapper, .ok, .ok-a, .ok-aj, .ok-c, .ok-d, .ok-e
 {
 	background: none repeat scroll 0% 0% #1695A3;
+    background: url(../img/download.jpeg);
 	background-attachment: fixed;
 	position: relative;
 	min-height: 700px;
@@ -313,7 +316,7 @@ h1
 .ok-d
 {
 	padding-top: 40px; 
-	background: #FF9666;
+	background: bcc0c8;
 	background-attachment: fixed;
 }
 
@@ -601,7 +604,7 @@ h1
 
 .social-links-a
 {
-	color: #1695A3;
+	color: #bcc0c8;
 }
 
 
@@ -790,6 +793,37 @@ hr
     font-weight: 400;
 }
 
+.post-content > p
+    {
+        font-size: 14px;
+    }
+    
+    
+
+@media screen and (max-width: 800px){
+    
+    p {
+      font-size: 16px;  
+    }
+    
+    .projects > p
+    {
+     
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (min-width: 400px){ 
+
+    .post-content > p
+    {
+        font-size: 14px;
+    }
+    
+    
+}
+
 @media screen and (max-width: 320px) 
 {
     
@@ -804,6 +838,16 @@ hr
 	    margin-top: 40px;
 	    width: 90%;
 	}
+    
+    .post-content > p
+    {
+        font-size: 14px;
+    }
+    
+    .intro-box-c > p
+    {
+        font-size: 14px;
+    }
     
 }
 
