@@ -27,7 +27,7 @@ body{
 
 	margin: 0px;
 	/* font-family: neuton, serif; */
-	font-family: 'Brandon';
+	font-family: 'Amiko', sans-serif;
 	font-size: 14px;
 	font-weight: normal;
 	color: #404040;
@@ -40,7 +40,7 @@ body{
 {
 	margin: 0px;
 	font-size: 14px;
-    font-family: 'Brandon';
+    font-family: 'Amiko', sans-serif;
 	font-weight: normal;
 	color: #404040;
 	background: #FFF;
@@ -50,9 +50,7 @@ body{
 }
 
 h1, h2, h3, h4
-{
- 
-    
+{  
     
 }
 
@@ -64,7 +62,7 @@ li{
 p{
 
 	color:		 	#FFF;
-	font-size: 		19px;
+	font-size: 		15px;
 	line-height:	40px;
 	font-weight: 400;
 }
@@ -180,7 +178,6 @@ a{
 
 .header-light
 {
-	color: ;
 	font-size: 44px;
 }
 
@@ -195,6 +192,7 @@ a{
 
 	color: #FFF;
 	font-weight: 600;
+	
 
 }
 
@@ -280,7 +278,6 @@ h1
 .intro-wrapper, .ok, .ok-a, .ok-aj, .ok-c, .ok-d, .ok-e
 {
 	background: none repeat scroll 0% 0% #1695A3;
-    background: url(../img/download.jpeg);
 	background-attachment: fixed;
 	position: relative;
 	min-height: 700px;
@@ -666,7 +663,7 @@ h1
 	text-align: center;
 	font-weight: bold;
 	font-size: 14px;
-	border-image: url('../img/dotted.png') 
+	border-image: url('../img/dotted.png'); 
 	border-top: 8px solid;
 }
 
@@ -694,8 +691,8 @@ hr
 
 .post-content > p
 {	
-	font-family: 'Brandon';
-	color: #33383D;
+
+	color: #3F4B51;
 	text-align: justify;
 }
 
@@ -802,8 +799,8 @@ hr
 
 .post-content > p
 {
-	font-family: 'Brandon';
-	font-size: 19px;
+	
+	font-size: 16px;
     line-height: 40px;
     font-weight: 400;
 }
@@ -811,7 +808,7 @@ hr
 .post-content > p
     {
         
-        color: #8C989E;
+        color: #3F4B51;
     }
     
     
@@ -819,7 +816,7 @@ hr
 @media screen and (max-width: 800px){
     
     p {
-      font-size: 16px;  
+      font-size: 15px;  
     }
     
     .projects > p
@@ -834,7 +831,7 @@ hr
 
     .post-content > p
     {
-        font-size: 18px;
+        font-size: 15px;
     }
     
     
@@ -857,7 +854,7 @@ hr
     
     .post-content > p
     {
-        font-size: 14px;
+        font-size: 16px;
     }
     
     .intro-box-c > p
@@ -950,7 +947,7 @@ hr
 	}
 	
 	p{
-		font-size: 16px;
+		font-size: 15px;
 	}
 
 	.footer
