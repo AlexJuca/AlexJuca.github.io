@@ -12,9 +12,9 @@
     <meta content="Alexandre Juca" name="twitter:title">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta content="Software developer, Web Developer Alexandre Juca" property="og:site_name">
-    <meta content="Thoughts and Strawberry flavoured decisions" name="description">
-    <meta content="Thoughts and Strawberry flavoured decisions" property="og:description">
-    <meta content="Thoughts and Strawberry flavoured decisions" name="twitter:description">
+    <meta content="Aprendizagem Maquina - Tutorial - Part 1" name="description">
+    <meta content="Aprendizagem Maquina - Tutorial - Part 1" property="og:description">
+    <meta content="Aprendizagem Maquina - Tutorial - Part 1" name="twitter:description">
 	<meta property="og:locale" content="pt_BR" />
 	<meta property="og:site_name" content="Matando bots com solicitações HTTP..." />
 	<meta property="og:image" content="http://alexjuca.github.io/assets/img/machine-learning.png" />
@@ -82,14 +82,19 @@
 	<!-- INTRO SECTION -->
 	<div id='hi' class='intro-wrapper'>
 		<div class='intro-box'>
-			<h1 class='header-white'> Hi! </h1>
+			<h1 class='header-white'> Olá! </h1>
 			<div class='lightline'></div>
 			<div class='intro-to-me'>
 				<a href='../../'><img class='animated bounceInDown my-profile img-circle' src='../../assets/img/AJ.jpg'></img></a>
-				<h3 class='my-title animated bounceInLeft'>I'm Alexandre Juca </h3>
-				<h3 class='my-title'>a Multiplatform Software Developer</h3>
+				<h3 class='my-title animated bounceInLeft'>Sou Alexandre Juca </h3>
+				<h3 class='my-title'>Autodidata & Desenvolvidor de software</h3>
 			</div>
-			<p> I am the founder & CTO of <a class='beezond-link' href='http://www.bitfyr.com'>BitFyr</a>. I am passionate about building useful things that affect peoples lives, teaching programming, computer science and building a more open web. This is where you'll find out about my thoughts, projects and evil plans to take over the world. #StayTuned</p>
+			<p>Sou Co-fundador e CTO da startup <a class='beezond-link' href='http://www.bitfyr.com'>BitFyr</a>. 
+			    Tenho grande paixão pela ciência da computação, aprendizagem máquina e amo aprender coisas interessantes! 
+				Se teu objectivo é aprender mais sobre algoritmos, aprendizagem máquina, 
+				segurança de informação e tecnologia em geral, então estas no blog certo! 
+				 
+			</p>
 		</div>
 
 	</div>
@@ -104,15 +109,15 @@
 			<floating-button id='share'></floating-button>
 
 			<article class='post-content'>
-					<p> Muita gente esta falando sobre aprendizagem maquina, mas o que é realmente? 
+					<p> Muita gente esta falando sobre aprendizagem máquina, mas o que é realmente? 
                         O que posso fazer com isso? Quem está usar? 
                         Bem este artigo foi escrito especificamente para responder algumas destas questões. 
                     </p>
 
                     <h2> O que é aprendizagem maquina? </h2>
 
-                    <p>Aprendizagem Maquina é uma área de Inteligência Artificial cujo objetivo é o desenvolvimento de algoritmos 
-						computacionais que ajudam a maquina a aprender. O algoritmo recebe dados e daí tenta deduzir informação 
+                    <p>Aprendizagem máquina é uma área de Inteligência Artificial cujo objetivo é o desenvolvimento de algoritmos 
+						computacionais que ajudam a máquina a aprender. O algoritmo recebe dados e daí tenta deduzir informação 
 						sobre as propriedades dos dados e esta informação possibilita o algoritmo a prever e tomar decisões baseadas
 						nessas previsões. Isso é possível porque dados não aleatorias contêm padrões e isso ajuda o algoritmo
 						a generalizar.Para generalizar, o algoritmo treina um modelo com dados que ela achou importante e retorna alguma saída.
@@ -124,7 +129,7 @@
 					   <p> Na grande maioria dos casos, o agente trabalha com espaços em que não há uma maneira eficiente de se programar manualmente uma função que lide com todos os casos possíveis, seja porque o ambiente em que atua não é discreto, por possuir uma certa aleatoriedade ou por não ser possível observá-lo completamente, então daí surge a necessidade de obter resultados de outras maneiras.</p>
                     <img src='../../assets/img/ven-diagram-aprendizam-maquina.png'></img>
                     <br></br>
-                    <p> Aprendizagem máquina encontra-se na interseção da ciência da computação, engenharia e estatísticas e tambem aparece um outras 
+                    <p> Aprendizagem máquina encontra-se na interseção da ciência da computação, engenharia e estatísticas e também aparece um outras 
                         disciplinas. Estatísticas e Algebra Linear são usadas extensivamente e possibilitam a resolução de vários 
 						problemas na área.
                     </p>
@@ -138,7 +143,9 @@
 						  referências ou exemplos
 						 de emails que o usuario identificou como sendo spam, o classificador pode deduzir se um email com certas 
 						 caracteristicas é 
-						 spam ou não.</p>
+						 spam ou não. </p>
+
+						 <p><b>Exemplos deste tipo de algoritmo: </b> Regressão Logística e Back Propagation Neural Network, kNN, Regressão Linear </p>
 
 						<br> </br>
 
@@ -148,20 +155,26 @@
 						clusterização é usado extensivamente em processamento de imagens e vídeos. 
 					</p>
 					
+					<p> <b>Exemplos deste tipo de algoritmo:</b> algoritmo do Apriori e k-Means </p>
+					
+					
 					<h2> Aprendizado por reforço </h2>
 					<p>  O terceiro grupo é uma familia de algoritmos que realiza um feedback sobre os resultados obtidos, atribuindo pontuações positivas a resultados considerados corretos e penalizando os incorretos. 
 						 Diante dessa pontuação, o agente consegue ajustar seu comportamento de modo a buscar o melhor resultado.
 						 Essa familia de algoritmos são utilizadas em robotíca e IA em jogos. Veja um exemplo de aprendizado por reforço no vídeo abaixo.
-						<br> </br>
+					
+					<p><b>Exemplos deste tipo de algoritmo: </b> Q-learning, Double Q-Learning e Prioritized Experience Replay </p>
+						
+					<br> </br>
 						 <iframe width="854" height="480" src="https://www.youtube.com/embed/qv6UVOQ0F44" frameborder="0" allowfullscreen></iframe>
-					</p>
-
+					<br> </br>
+					
 					<h2> Quem está usar e como? </h2>
 					<p> 
 						Há muitas empresas ao redor do mundo que estão a colecionar dados (data mining) com objectivo de analisar-lás com metodos
 						estatísticos e aprendizagem máquina, de maneiras a beneficar-se dessas informações. 
 						A Google usa aprendizagem máquina em muitos dos seus produtos, por exemplo Google Image Search usa o conjunto de visão computacional
-						e aprendizagem máquina para encontrar imagens semanticamente semelhantes e não só. O Facebook usa as mesmas técnologias
+						e aprendizagem máquina para encontrar imagens semânticamente semelhantes e não só. O Facebook usa as mesmas técnologias
 						para identificar a cara dos seus amigos! Isso não é mágia, isso é o poder da computação!
 
 						Aprendizagem máquina esta ser usado também em biotecnologia. os avanços na tecnologia de sequenciamento e rastreio criaram enormes conjuntos de dados
